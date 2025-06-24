@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: http://eits.local:8000/api/resource/ToDo
+  url: https://eits.thebigocommunity.org/api/resource/ToDo?filters=[["owner","=","sales_rep@eits.com"]]
   body: none
   auth: inherit
+}
+
+params:query {
+  filters: [["owner","=","sales_rep@eits.com"]]
 }

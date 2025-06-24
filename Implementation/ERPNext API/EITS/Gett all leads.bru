@@ -5,7 +5,12 @@ meta {
 }
 
 get {
-  url: https://eits.thebigocommunity.org/api/resource/Lead
+  url: https://eits.thebigocommunity.org/api/resource/Lead?filters=[["status","=","Lead"] ,["lead_owner", "=", "sales_rep@eits.com"]]&order_by=creation%20desc
   body: none
   auth: inherit
+}
+
+params:query {
+  filters: [["status","=","Lead"] ,["lead_owner", "=", "sales_rep@eits.com"]]
+  order_by: creation desc
 }
