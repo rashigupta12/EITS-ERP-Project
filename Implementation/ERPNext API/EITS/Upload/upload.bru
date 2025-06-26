@@ -5,18 +5,18 @@ meta {
 }
 
 post {
-  url: https://eits.thebigocommunity.org/api/method/upload_file
+  url: http://localhost:3000/api/method/upload_file
   body: multipartForm
   auth: inherit
 }
 
 headers {
-  Accept: application/json
-  Content-Type: multipart/form-data
+  ~Accept: application/json
+  ~Content-Type: multipart/form-data
 }
 
 body:multipart-form {
-  file: @file(C:\Users\prata\Downloads\hotel_properties (4).xlsx)
+  file: @file(C:\Users\Rashi Gupta\OneDrive\Pictures\ouput15.jpg)
 }
 
 body:file {
