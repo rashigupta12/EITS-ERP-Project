@@ -1,0 +1,15 @@
+meta {
+  name: phone number with customer
+  type: http
+  seq: 10
+}
+
+get {
+  url: https://eits.thebigocommunity.org/api/resource/Customer?filters=[["mobile_no", "=", "971505528918"] ]
+  body: none
+  auth: inherit
+}
+
+params:query {
+  filters: [["mobile_no", "=", "971505528918"] ]
+}

@@ -5,12 +5,12 @@ meta {
 }
 
 get {
-  url: https://eits.thebigocommunity.org/api/resource/ToDo?filters=[["allocated_to", "=", "site_inspector@eits.com"]]
+  url: https://eits.thebigocommunity.org/api/resource/ToDo?or_filters=[["allocated_to", "=", "+971 564 793 279"],]
   body: none
   auth: inherit
 }
 
 params:query {
-  filters: [["allocated_to", "=", "site_inspector@eits.com"]]
+  or_filters: [["allocated_to", "=", " 971 564 793 279"],]
   ~fields: [["name", "owner", "allocated_to", "description"]]
 }
