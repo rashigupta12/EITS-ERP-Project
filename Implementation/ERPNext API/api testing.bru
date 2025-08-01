@@ -1,0 +1,20 @@
+meta {
+  name: api testing
+  type: http
+  seq: 14
+}
+
+get {
+  url: https://eits.thebigocommunity.org/api/resource/User Settings?filters=[["user","=","site_inspector2@eits.com"]]&fields=["user","first_password"]
+  body: none
+  auth: inherit
+}
+
+params:query {
+  filters: [["user","=","site_inspector2@eits.com"]]
+  fields: ["user","first_password"]
+}
+
+settings {
+  encodeUrl: true
+}

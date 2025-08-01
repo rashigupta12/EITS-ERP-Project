@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: https://eits.thebigocommunity.org/api/method/frappe.auth.get_logged_user
+  url: https://eits.thebigocommunity.org/api/resource/User?filters=[["Has Role","role","=","EITS_Site_Inspector"]]
   body: none
   auth: inherit
+}
+
+params:query {
+  filters: [["Has Role","role","=","EITS_Site_Inspector"]]
 }
