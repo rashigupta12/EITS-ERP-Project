@@ -1,17 +1,18 @@
 meta {
   name: Get Area Python API copy copy
   type: http
-  seq: 7
+  seq: 6
 }
 
 get {
-  url: https://eits.thebigocommunity.org/api/method/eits_app.area_search.search_uae_areas?area_name=park
+  url: https://eits.thebigocommunity.org/api/method/eits_app.area_search.search_uae_areas?emirate=dubai
   body: json
   auth: inherit
 }
 
 params:query {
-  area_name: park
+  emirate: dubai
+  ~area_name: parkl
   ~mobile_no: 67
   ~email_id: 
 }
